@@ -51,8 +51,8 @@ $$dq_i(t) + \gamma q_i(t) dt = [\gamma \mu(c(\vec{p_i})) + \eta \sum_{j\neq i}{\
 
 With our vector of product rates, we can redefine this equation to be
 
-$$L_ij = 1 / ||p_j - p_i||^2  if i \neq j  $$
-$$L_ii = - Σ_{k ≠ i} 1 / ||p_k - p_i||^2$$
+$$L_{ij} = 1 / ||p_j - p_i||^2  if i \neq j  $$
+$$L_{ii} = - Σ_{k ≠ i} 1 / ||p_k - p_i||^2$$
 
 where
 
