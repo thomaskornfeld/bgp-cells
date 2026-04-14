@@ -50,12 +50,12 @@ What if our production rates encouraged cells near by to produce similar product
 $$dq_i(t) + \gamma q_i(t) dt = [\gamma \mu(c(\vec{p_i})) + \eta \sum_{j\neq i}{\frac{q_j-q_i}{(\vec{p_j}-\vec{p_i})^2}}]dt + \sqrt{2D} dW_t$$
 
 With our vector of product rates, we can redefine this equation to be
-$$L_{ij} = \begin{cases} 
-
-\frac{1}{|\vec{p_j}-\vec{p_i}|^2}\quad i\neq j\\
-
--\sum_{k\neq i}\frac{1}{|\vec{p_k}-\vec{p_i}|^2}\quad i = j\\
-
-\end{cases}$$
+$$\[
+L_{ij} =
+\begin{cases}
+\frac{1}{\lVert \vec{p}_j - \vec{p}_i \rVert^2} & i \neq j \\[6pt]
+-\displaystyle \sum_{k \neq i} \frac{1}{\lVert \vec{p}_k - \vec{p}_i \rVert^2} & i = j
+\end{cases}
+\]$$
 where
 $$\boxed{d\mathbf{q} = \left[-\gamma \mathbf{q} + \gamma\boldsymbol{\mu} + \eta L\mathbf{q}\right]dt + \sqrt{2D}\, d\mathbf{W}_t}$$
