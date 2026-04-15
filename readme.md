@@ -44,6 +44,16 @@ $$I_3 \sim \mathcal{N}\left(0, \frac{2D}{(\beta - \gamma)^2} \left( \frac{1 - e^
 
 Therefore, the gene expression level at a specific time $t$, is
 $$g(t) = g(0)e^{-\beta t} + q(0) \frac{e^{-\gamma t} - e^{-\beta t}}{\beta - \gamma} + \frac{\gamma}{\beta - \gamma} \int_0^t \mu(u) \left( e^{-\gamma(t-u)} - e^{-\beta(t-u)} \right) du + I_3\qquad I_3 \sim \mathcal{N}\left(0, \frac{2D}{(\beta - \gamma)^2} \left( \frac{1 - e^{-2\gamma t}}{2\gamma} - \frac{2(1 - e^{-(\beta+\gamma)t})}{\beta + \gamma} + \frac{1 - e^{-2\beta t}}{2\beta} \right)\right)$$
+If $u$ is constant, we see,
+
+$$g(t) = g(0)e^{-\beta t} + q(0) \frac{e^{-\gamma t} - e^{-\beta t}}{\beta - \gamma} + \frac{\gamma \mu}{\beta - \gamma} \left(\frac{1-e^{-\gamma t}}{\gamma} - \frac{1-e^{-\beta t}}{\beta}\right) + I_3\qquad I_3 \sim \mathcal{N}\left(0, \frac{2D}{(\beta - \gamma)^2} \left( \frac{1 - e^{-2\gamma t}}{2\gamma} - \frac{2(1 - e^{-(\beta+\gamma)t})}{\beta + \gamma} + \frac{1 - e^{-2\beta t}}{2\beta} \right)\right)$$
+
+Therefore, the gene expression level at a specific time $t$, is
+$$g(t) = g(0)e^{-\beta t} + q(0) \frac{e^{-\gamma t} - e^{-\beta t}}{\beta - \gamma} + \frac{\mu}{\beta - \gamma} \left(1-e^{-\gamma t} - \frac{\gamma}{\beta}(1-e^{-\beta t})\right) + I_3\qquad I_3 \sim \mathcal{N}\left(0, \frac{2D}{(\beta - \gamma)^2} \left( \frac{1 - e^{-2\gamma t}}{2\gamma} - \frac{2(1 - e^{-(\beta+\gamma)t})}{\beta + \gamma} + \frac{1 - e^{-2\beta t}}{2\beta} \right)\right)$$
+
+with our large limit in $g$ being
+
+$$g(\infty) \sim \mathcal{N}(\frac{\mu}{\beta}, \frac{2D}{(\beta - \gamma)^2} ( \frac{1}{2\gamma} - \frac{2}{\beta + \gamma} + \frac{1}{2\beta} ))$$
 
 What if our production rates encouraged cells near by to produce similar production rates? I.e.
 
